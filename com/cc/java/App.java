@@ -4,14 +4,18 @@ public class App {
     
     public static void main(String[] args) {
         
-        // 1.Instanziierung class --> object / instance
-        // Cat --> Referenztyp
-        // cat --> Referenzvariable
-        Cat cat = new Cat();
+        // // 1.Instanziierung class --> object / instance
+        // // Cat --> Referenztyp
+        // // cat --> Referenzvariable
 
-        cat.name = "Grizabella";
-        cat.furColor = "white";
-        cat.age = 29;
+        // Objekterzeugung ohne Konstruktor
+        // Cat cat = new Cat();
+        // cat.name = "Grizabella";
+        // cat.furColor = "white";
+        // cat.age = 29;
+
+        // Objekterzeugung mit Konstruktor
+        Cat cat = new Cat("Grizabelle", "white", 29);
 
         // output(cat.name);
         // output(cat.furColor);
@@ -26,11 +30,12 @@ public class App {
 
         output("------------------------------------------");
 
-        Cat cat2 = new Cat();
+        // Cat cat2 = new Cat();
+        // cat2.name = "Alonzo";
+        // cat2.furColor = "grey";
+        // cat2.age = 35;
 
-        cat2.name = "Alonzo";
-        cat2.furColor = "grey";
-        cat2.age = 35;
+        Cat cat2 = new Cat("Alonzo", "grey", 35);
 
         // output(cat2.name);
         // output(cat2.furColor);
