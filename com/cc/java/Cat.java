@@ -1,14 +1,17 @@
 package com.cc.java;
 
 public class Cat {
-   
+    // // Ohne Konstruktor (Zugriff auch von außen)
     // public String name;
     // public String furColor;
     // public int age;
+
+    // Mit Konstruktor (Zugriff nur von innen)
     private String name;
     private String furColor;
     private int age;
  
+    // Konstruktor
     public Cat(String name, String furColor, int age) {
         this.name = name;
         this.furColor = furColor;
