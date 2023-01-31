@@ -13,9 +13,12 @@ public class App {
         cat.furColor = "white";
         cat.age = 29;
 
-        output(cat.name);
-        output(cat.furColor);
-        output(String.valueOf(cat.age)); // Typkonvertierung
+        // output(cat.name);
+        // output(cat.furColor);
+        // output(String.valueOf(cat.age)); // Typkonvertierung
+        output(cat.tellYourName());
+        output(cat.tellYourFurColor());
+        output(String.valueOf(cat.tellYourAge()));
 
         output("Blick von aussen: " + cat);
         // cat.tellYourAddress()
@@ -29,9 +32,12 @@ public class App {
         cat2.furColor = "grey";
         cat2.age = 35;
 
-        output(cat2.name);
-        output(cat2.furColor);
-        output(String.valueOf(cat2.age));
+        // output(cat2.name);
+        // output(cat2.furColor);
+        // output(String.valueOf(cat2.age));
+        output(cat2.tellYourName());
+        output(cat2.tellYourFurColor());
+        output(String.valueOf(cat2.tellYourAge()));
 
         output("Blick von aussen: " + cat2);
         // cat2.tellYourAddress()
