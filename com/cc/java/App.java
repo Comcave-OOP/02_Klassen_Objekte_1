@@ -57,6 +57,9 @@ public class App {
         output("Blick von aussen: " + cat2);
         // cat2.tellYourAddress()
         output(cat2.tellYourAddress());
+
+        cat2.setFurColor("blue");
+        output(cat2.getFurColor());
       
     }
 

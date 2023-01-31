@@ -48,7 +48,10 @@ public class Cat {
     }
 
     public void setFurColor(String furColor) {
-        this.furColor = furColor;
+        boolean permission = false;
+        if (permission) {
+            this.furColor = furColor; 
+        }
     }
 
     public int getAge() {
