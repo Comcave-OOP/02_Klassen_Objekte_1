@@ -18,19 +18,45 @@ public class Cat {
         this.age = age;
     }
 
-    public String tellYourName()
-    {
-       return this.name; 
+    // Eigene getter Funktionen
+    // public String tellYourName()
+    // {
+    //    return this.name; 
+    // }
+
+    // public String tellYourFurColor()
+    // {
+    //    return this.furColor; 
+    // }
+
+    // public int tellYourAge()
+    // {
+    //    return this.age; 
+    // }
+
+    // Automatisch erzeugte getter und setter
+    public String getName() {
+        return name;
     }
 
-    public String tellYourFurColor()
-    {
-       return this.furColor; 
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int tellYourAge()
-    {
-       return this.age; 
+    public String getFurColor() {
+        return furColor;
+    }
+
+    public void setFurColor(String furColor) {
+        this.furColor = furColor;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     // public void tellYourAddress()
