@@ -36,7 +36,13 @@ public class Cat {
 
     // Automatisch erzeugte getter und setter
     public String getName() {
-        return name;
+        if (checkPermission()) {
+            return name;
+        }
+        else{
+            return "Sorry, no permission!";
+        }
+        
     }
 
     public void setName(String name) {
@@ -48,8 +54,7 @@ public class Cat {
     }
 
     public void setFurColor(String furColor) {
-        boolean permission = false;
-        if (permission) {
+        if (checkPermission()) {
             this.furColor = furColor; 
         }
     }
@@ -61,6 +66,12 @@ public class Cat {
     public void setAge(int age) {
         this.age = age;
     }
+
+
+    private boolean checkPermission(){
+        return false;
+    }
+
 
     // public void tellYourAddress()
     public String tellYourAddress()
