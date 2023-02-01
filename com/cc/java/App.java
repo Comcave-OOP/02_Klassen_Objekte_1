@@ -64,7 +64,7 @@ public class App {
     }
 
   
-    public static void output(String outputStr)
+    private static void output(String outputStr)
     {
         System.out.println(outputStr);
     }
